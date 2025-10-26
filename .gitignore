@@ -1,0 +1,62 @@
+# ==========================================================
+# Universal: Only track top-level files, ignore subdirectories
+# ==========================================================
+**
+
+# Allow directories so rules below can apply
+!*/
+
+# Allow only top-level files
+!/*
+
+# Ignore everything inside any subdirectory
+*/
+
+# ==========================================================
+# OS junk files (macOS / Linux / Windows)
+# ==========================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+.Network Trash Folder
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+Thumbs.db
+ehthumbs.db
+
+# Linux
+*~
+.nfs*
+
+# ==========================================================
+# Common development / editor noise
+# ==========================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# Node / Python / etc. (safe to include even if unused)
+node_modules/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.env
+.venv
